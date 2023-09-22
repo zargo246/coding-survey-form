@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title"> FreeCodeCamp Survey Form</h1>
+  <p id="description"> Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">
+      Name
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </label>
+    
+    <label id="email-label" for="email">
+      Email
+      <input id="email" type="email" placeholder="Enter your Email" required>
+    </label>
+
+    <label id="number-label" for="number">
+      Age (optional)
+      <input min="18" max="65" id="number" type="number" placeholder="Age">
+    </label>
+
+    <label>
+      What is your favorite coding language?
+      <select id="dropdown">
+        <option value="0">Choose a language</option>
+        <option value="Java">Java</option>
+        <option value="Javascript">Javascript</option>
+      </select>
+    </label>
+
+    <p>Which do you prefer?</p>
+    <label for="preference">
+      <input type="radio" name="preference" id="preference">
+      Front-end
+    </label>
+
+    <label for="preference">
+      <input type="radio" name="preference" id="preference">
+      Back-End
+    </label>
+
+    <p>Which coding languages do you know? (check all that apply)</p>
+    <div>
+      <input type="checkbox" id="python" value="Python">
+      <label for="python">Python</label>
+    </div>
+    <div>
+      <input type="checkbox" id="java" value="Java">
+      <label for="java">Java</label>
+    </div>
+    
+    <div>
+    <label for="favorite_code">What made you choose your favorite coding language?</label>
+    <textarea name="favorite_code" id="favorite_code" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
